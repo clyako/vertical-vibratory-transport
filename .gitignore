@@ -1,0 +1,6 @@
+Teensy/.pio
+Teensy/.vscode/.browse.c_cpp.db*
+Teensy/.vscode/c_cpp_properties.json
+Teensy/.vscode/launch.json
+Teensy/.vscode/ipch
+.DS_Store
