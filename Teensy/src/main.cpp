@@ -37,14 +37,14 @@ AccelerometerICM20649 imu = AccelerometerICM20649(baud_rate_, cs_pin_, fchoice_,
 /*
  * Initializing the Carlton Haptic Motor
  */
-uint8_t pwm_pin = A21;
-uint8_t pwm_res = 10; // bits
+uint8_t dac_pin = A21;
+uint8_t analog_res = 10; // bits
 uint8_t max_voltage_pin = A15;
 uint8_t time_between_decrements_pin = A16;
 uint8_t voltage_offset_read_pin = A17;
 uint8_t square_offset_low_read_pin = A18;
 uint8_t voltage_offset_write_pin = A19;
-CarltonHapticMotor motor = CarltonHapticMotor(pwm_pin, pwm_res, max_voltage_pin, time_between_decrements_pin, voltage_offset_read_pin, voltage_offset_write_pin, square_offset_low_read_pin);
+CarltonHapticMotor motor = CarltonHapticMotor(dac_pin, analog_res, max_voltage_pin, time_between_decrements_pin, voltage_offset_read_pin, voltage_offset_write_pin, square_offset_low_read_pin);
 
 /*
  * Initializing the switch debounce to control data logging
@@ -159,7 +159,7 @@ void pulse_data_collection(float intensity, float on_time)
 }
 
 /*
-  This function to check the status of the rocker switch. The rocker switch is used to control when data collection
+  This function checks the status of the rocker switch. The rocker switch is used to control when data collection
   starts and stops for the functions 'pulse_data_collection' and 'manual_ping'. The rocker switch also determines when the
   sawtooth or offset square wave is sent to the motor.
 */

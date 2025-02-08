@@ -59,7 +59,6 @@ void AccelerometerICM20649::initialize_imu()
             delay(10);
         }
     }
-    // Serial.println("ICM20649 initialized");
 }
 
 void AccelerometerICM20649::check_accelerometer_range()
