@@ -21,7 +21,7 @@ void check_switch();
 CarltonHapticMotor motor = CarltonHapticMotor();
 
 /*
- * Initializing the switch debounce to control data logging
+ * Initializing the switch debounce to control if the device is on or off
  */
 const int rocker_pin = A14;
 int debounce_time = 5; // ms
