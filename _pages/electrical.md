@@ -1,7 +1,7 @@
 ---
 title: Electrical
 permalink: /electrical/
-layout: default
+layout: single
 ---
 
 # Electrical
