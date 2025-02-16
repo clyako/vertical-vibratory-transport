@@ -1,5 +1,6 @@
 ---
 title: Electrical
+permalink: /electrical/
 layout: default
 ---
 
