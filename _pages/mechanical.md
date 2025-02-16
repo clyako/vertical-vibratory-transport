@@ -1,7 +1,6 @@
 ---
 title: Mechanical
 permalink: /mechanical/
-layout: default
 ---
 
 # Mechanical
