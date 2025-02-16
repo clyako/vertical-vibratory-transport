@@ -1,0 +1,23 @@
+# _config.yml for Minimal Mistakes theme
+remote_theme: mmistakes/minimal-mistakes
+
+# Site settings
+title: "Vertical Vibratory Transport of Grasped Parts"
+description: "A study on vibratory transport using impacts."
+
+# Navigation settings
+nav:
+  - title: Home
+    url: /
+  - title: working principle
+    url: /working-principle/
+  - title: mechanical
+    url: /mechanical/
+  - title: electrical
+    url: /electrical/
+  - title: software
+    url: /software/
+
+# Plugins
+plugins:
+  - jekyll-include-cache
