@@ -1,9 +1,9 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Working Principle"
+    url: /working-principle/
+  - title: "Mechanical"
+    url: /mechanical/
+  - title: "Electrical"
+    url: /electrical/
+  - title: "Software"
+    url: /software/
