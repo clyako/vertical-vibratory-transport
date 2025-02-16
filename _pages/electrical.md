@@ -1,10 +1,7 @@
 ---
 title: Electrical
 permalink: /electrical/
-layout: single
 ---
-
-# Electrical
 
 The electrical system for the vertical vibratory transport mechanism integrates high-current motor drivers, feedback sensors, and a reliable power distribution network.
 
