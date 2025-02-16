@@ -1,8 +1,23 @@
 ---
-permalink: /about/
-title: "About"
+title: Software
+permalink: /software/
+layout: default
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+# Software
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+The software controlling the vertical vibratory transport system is built around a Teensy microcontroller, leveraging high-speed PWM and real-time feedback for precise motor control.
+
+## Control Architecture
+- **PID control:** The system uses a PID loop to maintain surface acceleration within target parameters.
+- **Feedback sensors:** Position and current sensors provide real-time feedback, allowing for adaptive control.
+- **Frequency modulation:** To optimize transport velocity, the control software dynamically adjusts vibration frequency based on the system’s current operating conditions.
+
+## Code Structure
+- **Main loop:** Handles sensor input, PID calculations, and motor control output.
+- **Interrupt routines:** Manage timing-critical tasks, such as encoder readings and PWM updates.
+- **Configuration files:** Allow users to easily adjust system parameters, including PID gains, vibration frequency, and acceleration limits.
+
+You can find the complete Teensy code in the repository's `/src` folder.
+
+[Back to Overview](index.md)
