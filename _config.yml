@@ -21,3 +21,4 @@ nav:
 # Plugins
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
