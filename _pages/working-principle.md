@@ -1,7 +1,6 @@
 ---
 title: Working Principle
 permalink: /working-principle/
-layout: default
 ---
 
 # Working Principle
