@@ -1,7 +1,6 @@
 ---
 title: Software
 permalink: /software/
-layout: default
 ---
 
 # Software
