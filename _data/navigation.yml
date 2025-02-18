@@ -1,9 +1,24 @@
 main:
   - title: "Working Principle"
-    url: /working-principle/
+    url: /docs/working-principle/
   - title: "Mechanical"
-    url: /mechanical/
+    url: /docs/mechanical/
   - title: "Electrical"
-    url: /electrical/
+    url: /docs/electrical/
   - title: "Software"
-    url: /software/
+    url: /docs/software/
+
+docs:
+  - title: Working Principle
+    children: 
+      - title: "Working Principle"
+        url: /docs/working-principle/
+  - title: design
+    children:
+      - title: "Mechanical"
+        url: /docs/mechanical/
+      - title: "Electrical"
+        url: /docs/electrical/
+      - title: "Software"
+        url: /docs/software/
+  
