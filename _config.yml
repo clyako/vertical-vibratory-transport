@@ -23,6 +23,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 # github_username: usernames
 minimal_mistakes_skin: contrast
 search: true
+baseurl: "/vertical-vibratory-transport-of-grasped-parts-using-impacts" # Add your repository name here
+url: "https://clyako.github.io" # Your GitHub Pages URL
 
 # Build settings
 markdown: kramdown
