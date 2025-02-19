@@ -1,1 +1,0 @@
-Sitemap: http://localhost:4000/vertical-vibratory-transport-of-grasped-parts-using-impacts/sitemap.xml
