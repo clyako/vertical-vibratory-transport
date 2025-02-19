@@ -1,6 +1,8 @@
 main:
-  - title: "Working Principle"
-    url: /docs/working-principle/
+  - title: "Paper"
+    url: /docs/paper/
+  - title: "High Level Strategy"
+    url: /docs/high-level-strategy/
   - title: "Mechanical"
     url: /docs/mechanical/
   - title: "Electrical"
@@ -11,8 +13,10 @@ main:
 docs:
   - title: Working Principle
     children: 
-      - title: "Working Principle"
-        url: /docs/working-principle/
+      - title: "High Level Strategy"
+        url: /docs/high-level-strategy/
+      - title: "Dynamics"
+        url: /docs/dynamics/
   - title: design
     children:
       - title: "Mechanical"

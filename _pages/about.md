@@ -1,4 +1,3 @@
 ## About
 
-In this paper, we use impact-induced acceleration in conjunction with
-periodic stick-slip to successfully and quickly transport parts vertically against gravity.
+This work was presented at ICRA 2024, and is aimed towards creating a non-anthropomorphic vibration-based method for robotic in-hand manipulation. Vibrational transport of objects is not a new concept. In fact, many of the papers cited in our work go back decades. However, most of this transport occurred in the plane or at a slight angle to the plane (think [vibratory part feeders](https://www.youtube.com/watch?v=E0WLpJ0FyaU))
