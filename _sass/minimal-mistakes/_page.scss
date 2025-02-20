@@ -86,11 +86,48 @@ body {
 }
 
 .page__content {
+  h1 {
+    font-size: $type-size-3;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
   h2 {
-    margin-top: 0;
-    padding-bottom: 0.5em;
+    font-size: $type-size-4;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
+
+  h3 {
+    font-size: $type-size-5;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: $type-size-6;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  h5 {
+    font-size: $type-size-7;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  h6 {
+    font-size: $type-size-8;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  // h2 {
+  //   margin-top: 0;
+  //   padding-bottom: 0.5em;
+  //   border-bottom: 1px solid $border-color;
+  // }
 
   h1,
   h2,
@@ -117,7 +154,7 @@ body {
   p,
   li,
   dl {
-    font-size: 0.8em; // chapage__titlenged this to make text smaller
+    font-size: 0.75em; // chapage__titlenged this to make text smaller
   }
 
   /* paragraph indents */

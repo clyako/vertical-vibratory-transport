@@ -9,6 +9,3 @@ Links to the paper can be found on [IEEE](https://ieeexplore.ieee.org/document/1
 <video style="width: 100%; height: auto;" controls="controls" preload="auto">
   <source src="{{ site.baseurl }}/assets/videos/ICRA-2024-InfoVaya-Video.webm" type="video/webm">
 </video>
-
-<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/Mb02fUOyaTE" frameborder="0" allowfullscreen></iframe> -->
-

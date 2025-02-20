@@ -45,7 +45,7 @@ global relative_errors max_positions estimated_normal_forces;
 relative_errors = zeros(1, 10);
 max_positions = zeros(1, 10);
 estimated_normal_forces = zeros(1, 10);
-trial_to_run = 0;
+trial_to_run = 5;
 
 params_from_paper = [0.6234, 10.6500, 13.0009, 9.9833, 6.7872, 6.0413, 7.0798, 6.2765, 6.6180, 7.1825, 8.2225];
 
@@ -90,7 +90,7 @@ fprintf("Mean percent change in normal force = %2.2f%%\n", mean(normal_force_per
 
 % parameters needs to be defined first, which occurs once the optimization
 % is run (or you can specify them)
-trial_to_run = 5;
+trial_to_run = 6;
 
 % define your parameters here
 params = params_from_paper;

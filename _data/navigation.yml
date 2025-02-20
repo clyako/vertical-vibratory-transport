@@ -1,28 +1,28 @@
 main:
   - title: "Paper"
     url: /docs/paper/
-  - title: "High Level Strategy"
-    url: /docs/high-level-strategy/
-  - title: "Mechanical"
-    url: /docs/mechanical/
-  - title: "Electrical"
-    url: /docs/electrical/
-  - title: "Software"
-    url: /docs/software/
+  - title: "Theory"
+    url: /docs/theory/
+  - title: "Implementation"
+    url: /docs/implementation
 
 docs:
-  - title: Working Principle
-    children: 
-      - title: "High Level Strategy"
-        url: /docs/high-level-strategy/
+  - title: "Theory"
+    children:
+      - title: "High-Level Strategy"
+        url: /docs/theory/#high-level-strategy
       - title: "Dynamics"
-        url: /docs/dynamics/
-  - title: design
+        url: /docs/theory/#dynamics
+      - title: "Vertical Vibratory Transport Is Difficult"
+        url: /docs/theory//#vertical-vibratory-transport-is-difficult
+      - title: "Experimental Validation"
+        url: /docs/theory/#experimental-validation
+  - title: "Implementation"
     children:
       - title: "Mechanical"
-        url: /docs/mechanical/
+        url: /docs/implementation/#mechanical
       - title: "Electrical"
-        url: /docs/electrical/
+        url: /docs/implementation/#eletrical
       - title: "Software"
-        url: /docs/software/
+        url: /docs/implementation/#software
   

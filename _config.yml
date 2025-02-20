@@ -46,13 +46,8 @@ collections:
     output: true
     permalink: /docs/:path/
 
-# sass:
-#   sass_dir: _sass
-#   style: compressed
-
 include:
   - _layouts
-  # - assets
 
 defaults:
   - scope:

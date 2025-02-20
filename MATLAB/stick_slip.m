@@ -23,7 +23,7 @@ if abs(v_rel) >= v_min % if slipping
     F_friction = - sign(v_rel) * F_k;
 else % sticking
     if abs(F_hyp) > F_s % if got unstuck
-        F_friction = sign(v_rel) * F_k; 
+        F_friction = -sign(v_rel) * F_k; 
     else % stuck
         F_friction = F_hyp;
         sticking = 1;
