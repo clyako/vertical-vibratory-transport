@@ -14,7 +14,7 @@ docs:
       - title: "Dynamics"
         url: /docs/theory/#dynamics
       - title: "Vertical Vibratory Transport Is Difficult"
-        url: /docs/theory//#vertical-vibratory-transport-is-difficult
+        url: /docs/theory/#vertical-vibratory-transport-is-difficult
       - title: "Experimental Validation"
         url: /docs/theory/#experimental-validation
   - title: "Implementation"
