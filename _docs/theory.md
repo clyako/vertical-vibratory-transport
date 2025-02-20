@@ -41,4 +41,6 @@ The above equations detail the challenges which upward vertical vibratory transp
 
 ### Experimental Validation
 
-To validate our dynamics model described by $\eqref{eq:sticking}$ and $\eqref{eq:slipping}$ we recorded the interaction of a moving surface and a transported part. The recording was then processed by the free software [Tracker](https://opensourcephysics.github.io/tracker-website/) in order to extract surface and part motion. The surface motion was then used as input to a Simulink model to predict the resulting part motion, which was compared with the experimentally observed part motion.
+To validate our dynamics model described by $\eqref{eq:sticking}$ and $\eqref{eq:slipping}$ we recorded the interaction of a moving surface and a transported part. The recording was then processed by the free software [Tracker](https://opensourcephysics.github.io/tracker-website/) in order to extract surface and part motion. The surface motion was then used as input to a Simulink model to predict the resulting part motion, which was compared with the experimentally observed part motion. A sample trial (Trial #5) is shown below (there were 10 total trials).
+
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/part-position-comparison.png){: .align-center}
