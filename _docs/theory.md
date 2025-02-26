@@ -6,14 +6,15 @@ permalink: /docs/theory/
 
 Here we discuss the high-level strategy, define that strategy using dynamics and an assumed friction model, and how that model was validated.
 
-### High-Level Strategy
-Given a controllable moving surface, and a part that is to be transported, the operating principle is relatively simple and similar to that of horizontal transport[^1]. First, the object is transported upwards against gravity by _sticking_ to the moving surface. The moving surface then quickly accelerates downward in order to _slip_ relative to the part, catching the part at a lower position. This sticking-slipping cycle repeats to have net motion of the part upwards, as shown in the below graphic.
+## High-Level Strategy
+Given a controllable moving surface, and a part that is to be transported, the operating principle is relatively simple and similar to that of horizontal transport[^1]. First, the part is transported upwards against gravity by _sticking_ to the moving surface. The moving surface then quickly accelerates downward in order to _slip_ relative to the part, catching the part at a lower position. This sticking-slipping cycle repeats to have net motion of the part upwards, as shown in the below graphic.
 
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/vibrational-strategy.gif){: .align-center}
+<span class="figure-caption"><strong>Fig. 1</strong>: Alternating sticking and slipping phases achieve net part transport against gravity.</span>
 
 [^1]: Quaid, A. E. (1999, May). A miniature mobile parts feeder: Operating principles and simulation results. In Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No. 99CH36288C) (Vol. 3, pp. 2221-2226). IEEE.
 
-### Dynamics
+## Dynamics
 While many friction models exist, we used the well-known Coulomb friction model. The equations of motion are shown below:
 
 \begin{equation}
@@ -39,8 +40,10 @@ From $\eqref{eq:sticking}$ and $\eqref{eq:minimum_normal}$ the minimum required 
 
 The above equations detail the challenges which upward vertical vibratory transport presents compared to horizontal transport. In most practical cases, we have $\mu_s < 1$, so \eqref{eq:minimum_normal} means that the part $S$ must be squeezed with a force $F_n$ exceeding its own weight. Equation $\eqref{eq:sticking}$ shows that gravity reduces the maximum upward part acceleration during sticking, and that overcoming this limitation requires squeezing the part harder still. However, from \eqref{eq:a_max_lower_bound}, squeezing with higher normal forces requires more powerful actuators to reach higher surface accelerations, which already need to exceed $2g$ (compared to $a_{max} > \mu_s g$ for the horizontal case). Finally, \eqref{eq:slipping} shows that during slipping, the part accelerates faster down than up.
 
-### Experimental Validation
+## Experimental Validation
 
 To validate our dynamics model described by $\eqref{eq:sticking}$ and $\eqref{eq:slipping}$ we recorded the interaction of a moving surface and a transported part. The recording was then processed by the free software [Tracker](https://opensourcephysics.github.io/tracker-website/) in order to extract surface and part motion. The surface motion was then used as input to a Simulink model to predict the resulting part motion, which was compared with the experimentally observed part motion. A sample trial (Trial #5) is shown below (there were 10 total trials).
 
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/part-position-comparison.png){: .align-center}
+
+<span class="figure-caption"><strong>Fig. 2</strong>: Simulated (red) and experimental (black) part positions, along with the periodic surface motion (blue).</span>

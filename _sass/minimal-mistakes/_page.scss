@@ -94,7 +94,7 @@ body {
 
   h2 {
     font-size: $type-size-4;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
@@ -606,5 +606,18 @@ body {
     @include breakpoint($x-large) {
       padding-inline-end: 0;
     }
+  }
+}
+
+.figure-caption {
+  font-size: 0.95em;
+  color: gray;
+  text-align: center;
+  font-style: italic;
+
+  strong {
+    font-style: normal;
+    font-weight: bold;
+    color: gray;
   }
 }

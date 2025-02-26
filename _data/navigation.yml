@@ -8,21 +8,23 @@ main:
 
 docs:
   - title: "Theory"
+    url: /docs/theory
     children:
       - title: "High-Level Strategy"
         url: /docs/theory/#high-level-strategy
       - title: "Dynamics"
         url: /docs/theory/#dynamics
-      - title: "Vertical Vibratory Transport Is Difficult"
-        url: /docs/theory/#vertical-vibratory-transport-is-difficult
       - title: "Experimental Validation"
         url: /docs/theory/#experimental-validation
   - title: "Implementation"
+    url: /docs/implementation
     children:
       - title: "Mechanical"
         url: /docs/implementation/#mechanical
       - title: "Electrical"
-        url: /docs/implementation/#eletrical
+        url: /docs/implementation/#electrical
       - title: "Software"
         url: /docs/implementation/#software
+      - title: "Running the Device"
+        url: /docs/implementation/#running-the-device
   
