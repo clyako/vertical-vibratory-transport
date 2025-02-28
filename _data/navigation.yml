@@ -7,6 +7,8 @@ main:
     url: /docs/implementation
 
 docs:
+  - title: "Paper"
+    url: /docs/paper/
   - title: "Theory"
     url: /docs/theory
     children:
@@ -25,6 +27,6 @@ docs:
         url: /docs/implementation/#electrical
       - title: "Software"
         url: /docs/implementation/#software
-      - title: "Running the Device"
-        url: /docs/implementation/#running-the-device
+      - title: "Getting Things Up and Running"
+        url: /docs/implementation/#getting-things-up-and-running
   

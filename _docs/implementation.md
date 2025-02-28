@@ -86,11 +86,20 @@ The full circuit schematic is shown in Fig. 5 and available as a PDF [here]({{ s
 
 <span class="figure-caption"><strong>Fig. 5</strong>: Circuit schematic.</span>
 
-We used a 300 W benchtop power supply (Mastech HY3005F-3) with the two controllable outputs set to series-mode to achieve a dual supply capable of ±30 V (only used it at ±18 V) and 5 A. The schematic also shows the use of a Teensy 3.6, which was used for its built-in DAC, however, these are difficult to come by. Instead, a Teensy 4.1 can be used with an appropriate external DAC (such as the MCP4922, which has an SPI interface, or something faster that uses I<sup>2</sup>S). [POWER RESISTOR NOTE] [NOTE ABOUT DIFFERING MOTOR CHARACTERISTICS AND NEEDING SEPARATE DRIVE CIRCUITS]
+**Note:** The above circuit schematic assumes equal motor parameters to ensure the same current flows through both motors. Since this is likely not the case, separate OPA548 power amps and power resistors should be used with each motor.
+{: .notice--warning}
+
+We used a 300 W benchtop power supply (Mastech HY3005F-3) with the two controllable outputs set to series-mode to achieve a dual supply capable of ±30 V (only used it at ±18 V) and 5 A. The schematic also shows the use of a Teensy 3.6, which was used for its built-in DAC, however, these are difficult to come by. Instead, a Teensy 4.1 can be used with an appropriate external DAC (such as the MCP4922, which has an SPI interface, or something faster that uses I<sup>2</sup>S). 
+
+[NOTE ABOUT DIFFERING MOTOR CHARACTERISTICS AND NEEDING SEPARATE DRIVE CIRCUITS]
+
+
+**Note:** Running the device at too high of currents for extended periods of time can cause the yellow plastic housing of the actuator to melt. Select R6 to set the desired current limit output of the OPA548 power amp (see the table in Fig. 41 in the [OPA548 datasheet]({{ site.baseurl }}/assets/files/OPA548-datasheet.pdf)), and ensure the power resistor, R7, is sufficient based on your desired current limit. 
+{: .notice--warning}
 
 ## Software
 
-The code is broken up by usage: the Teensy code is for running the gripper, and the MATLAB code is for running simulations using the dynamical model and visualizing experimentally obtained data.
+The code is broken up by usage: the Teensy code is for running the gripper, and the MATLAB code is for running simulations using the dynamical model and visualizing experimentally obtained data. Everything is available on [GitHub](https://github.com/clyako/vertical-vibratory-transport-of-grasped-parts-using-impacts.git).
 
 ### Teensy
 
@@ -100,8 +109,26 @@ The Teensy code has several functions:
 2. Send a [sawtooth current waveform](https://en.wikipedia.org/wiki/Sawtooth_wave#/media/File:Waveforms.svg) to the actuators.
 3. Adjust the sawtooth current waveform based on user-controlled potentiometer inputs.
 
+The code can be found in `teensy/` on [GitHub](https://github.com/clyako/vertical-vibratory-transport-of-grasped-parts-using-impacts.git). 
+
+**Note:** The Teensy code has been cleaned up without retesting on the gripper, as it is no longer in service. Please use caution when running the gripper for the first time (try running at lower currents, use a scope to check the output current waveform across the power resistor), and if you need any help getting things up and running please send an email to clyej3@gmail.com.
+{: .notice--danger}
+
 ### MATLAB
 
-## Running the Device
+The MATLAB code has three `.m` files and two `.slx` (Simulink) files. You should not need to worry about the file `stick_slip.m`, as this is used by both Simulink files to calculate the friction force in the simulations. There is also a `data/` folder that contains 10 experimental trials, where surface and part motion were recorded. This data can be used across the rest of the `.m` and `.slx` files. For these files:
 
+1. `experimental_vs_optimal_comparison.m` should be used with `vibrational_transport_optimal_surface.slx`. As part of the paper, we determined what the optimal surface motion should be in a given situation to maximize the average part velocity. Run `experimental_vs_optimal_comparison.m` and then view the results in `vibrational_transport_optimal_surface.slx`, using the scopes to compare simulated part motion in response to optimal surface motion with the experimentally observed part motion. Set various parameters such as the part mass and friction coefficients in Section C, as well as the parameters of the optimal surface motion (such as the frequency, `freq` and the maximum acceleration, `a_max`) in Section D. 
+2. `parameter_estimation.m` should be used witih `vibrational_transport_experimental_surface.slx`. These files have two main functions. First, you can fit the normal force, $F_n$, for each individual trial and the kinetic coefficient of friction, $\mu_k$ across all trials, to try and get the best fit between the experimentally observed part motion and the simulated part motion (Section C). Second, you can compare the fit for individual trials by selecting a specific trial in Section E. You can play around with the normal force and kinetic coefficient of friction by putting your own values in the `params` array. 
+
+The code can be found in `matlab/` on [GitHub](https://github.com/clyako/vertical-vibratory-transport-of-grasped-parts-using-impacts.git). 
+
+## Getting Things Up and Running
+
+As noted above, the Teensy code has been cleaned up without retesting on the gripper, as it is no longer in service. Please use caution when running the gripper for the first time (try running at lower currents, use a scope to check the output current waveform across the power resistor). Also, please remember to 
+
+**Note:** WEAR HEARING PROTECTION!
+{: .notice--danger}
+
+The device is incredibly loud. If you need any help at all getting things up and running please reach out to clyej3@gmail.com and I am more than happy to work with you.
 
