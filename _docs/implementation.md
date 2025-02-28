@@ -91,9 +91,6 @@ The full circuit schematic is shown in Fig. 5 and available as a PDF [here]({{ s
 
 We used a 300 W benchtop power supply (Mastech HY3005F-3) with the two controllable outputs set to series-mode to achieve a dual supply capable of ±30 V (only used it at ±18 V) and 5 A. The schematic also shows the use of a Teensy 3.6, which was used for its built-in DAC, however, these are difficult to come by. Instead, a Teensy 4.1 can be used with an appropriate external DAC (such as the MCP4922, which has an SPI interface, or something faster that uses I<sup>2</sup>S). 
 
-[NOTE ABOUT DIFFERING MOTOR CHARACTERISTICS AND NEEDING SEPARATE DRIVE CIRCUITS]
-
-
 **Note:** Running the device at too high of currents for extended periods of time can cause the yellow plastic housing of the actuator to melt. Select R6 to set the desired current limit output of the OPA548 power amp (see the table in Fig. 41 in the [OPA548 datasheet]({{ site.baseurl }}/assets/files/OPA548-datasheet.pdf)), and ensure the power resistor, R7, is sufficient based on your desired current limit. 
 {: .notice--warning}
 
