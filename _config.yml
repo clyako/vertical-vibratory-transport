@@ -31,7 +31,7 @@ permalink: /
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
+  # - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
