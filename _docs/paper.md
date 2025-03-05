@@ -10,3 +10,11 @@ Links to the paper can be found on [IEEE](https://ieeexplore.ieee.org/document/1
   <source src="{{ site.baseurl }}/assets/videos/ICRA-2024-InfoVaya-Video.webm" type="video/webm">
   <source src="{{ site.baseurl }}/assets/videos/ICRA-2024-InfoVaya-Video.mp4" type="video/mp4">
 </video>
+
+---
+
+### Contributors
+* Connor Yako
+* Jérôme Nowak
+* Shenli Yuan
+* Kenneth Salisbury
